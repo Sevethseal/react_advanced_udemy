@@ -1,0 +1,22 @@
+/*=============================================
+=            Foundation - colors              =
+=============================================*/
+
+/**
+ * This file defines the actual colors that will be used for styling. They will default to the palette
+ * we defined in the _variable.scss file. This is our default palette, and devs can override this
+ * with their own variables.
+ */
+
+/*=============================================
+=           App bar background  colors=
+=============================================*/
+$app-bar-bg-primary: var(--dse-app-bar-bg-primary, $white) !default;
+$app-bar-bg-secondary: var(--dse-app-bar-bg-secondary, $purple) !default;
+
+/*=============================================
+=           App bar background  colors=
+=============================================*/
+
+$btn-primary: var(--dse-btn-primary, $caribbeanGreen) !default;
+$btn-secondary: var(--dse-btn-secondary, $purple) !default;

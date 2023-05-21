@@ -1,0 +1,39 @@
+@mixin margin-top($space) {
+  margin-top: map-get($spacing, $space);
+}
+
+/* Use Case
+
+@include margin-top("md"){
+
+css content
+
+}
+*/
+
+@mixin laptop {
+  @media (min-width: map-get($breakpoints, "lg")) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: map-get($breakpoints, "xl")) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: map-get($breakpoints, "md")) {
+    @content;
+  }
+}
+
+/* Use Case
+
+@include tablet{
+
+css content
+
+}
+*/
